@@ -1,8 +1,8 @@
 
 let button = document.getElementById('bmi');
 button.addEventListener('click', () => {
-    const height = parseInt(document.getElementById('height').value);
-    const weight = parseInt(document.getElementById('weight').value);
+    const height = parseFloat(document.getElementById('height').value);
+    const weight = parseFloat(document.getElementById('weight').value);
     const result = document.getElementById('output');
     let height_status = false, weight_status = false;
 
@@ -45,8 +45,8 @@ button.addEventListener('click', () => {
 
 let but=document.getElementById('diet');
 but.addEventListener('click',()=>{
-    const height=parseInt(document.getElementById('height').value);
-    const weight=parseInt(document.getElementById('weight').value);
+    const height=parseFloat(document.getElementById('height').value);
+    const weight=parseFloat(document.getElementById('weight').value);
     const result=document.getElementById('out');
     let height_status=false,weight_status=false;
 
@@ -69,7 +69,7 @@ but.addEventListener('click',()=>{
 
         if (bmi < 18.6) {
             result.innerHTML = `
-              <strong>Recommended Diet for Underweight (BMI &lt; 18.6):</strong><br><br>
+              <strong></strong><br><br>
               1️⃣ <strong>Carbohydrates:</strong> Whole grains like oats, quinoa, brown rice, and whole wheat bread provide energy and fiber.<br>
               2️⃣ <strong>Proteins:</strong> Lean sources such as chicken breast, turkey, fish, tofu, beans, and lentils help build and repair tissues.<br>
               3️⃣ <strong>Fats:</strong> Healthy fats from avocados, nuts, seeds, and olive oil can boost calorie intake.<br>
@@ -78,7 +78,7 @@ but.addEventListener('click',()=>{
             result.style.color = 'orange';
           } else if (bmi >= 18.6 && bmi < 24.9) {
             result.innerHTML = `
-              <strong>Recommended Diet for Normal Weight (BMI 18.6 - 24.9):</strong><br><br>
+              <strong></strong><br><br>
               1️⃣ <strong>Carbohydrates:</strong> Whole grains, fruits, and vegetables for fiber and nutrients.<br>
               2️⃣ <strong>Proteins:</strong> Lean meats, poultry, fish, eggs, legumes, tofu, and dairy.<br>
               3️⃣ <strong>Fats:</strong> Avocados, nuts, seeds, and olive oil for heart-healthy fats.<br>
@@ -96,7 +96,7 @@ but.addEventListener('click',()=>{
             result.style.color = 'darkorange';
           } else {
             result.innerHTML = `
-              <strong>Recommended Diet for Obese (BMI 30+):</strong><br><br>
+              <strong></strong><br><br>
               1️⃣ <strong>Carbohydrates:</strong> Opt for complex carbs and high-fiber foods to manage appetite.<br>
               2️⃣ <strong>Proteins:</strong> Use lean and plant-based proteins to reduce saturated fat intake.<br>
               3️⃣ <strong>Fats:</strong> Minimize saturated/trans fats and prioritize unsaturated options.<br>
@@ -115,8 +115,8 @@ but.addEventListener('click',()=>{
 
 let butt=document.getElementById('exercise');
 butt.addEventListener('click',()=>{
-    const height=parseInt(document.getElementById('height').value);
-    const weight=parseInt(document.getElementById('weight').value);
+    const height=parseFloat(document.getElementById('height').value);
+    const weight=parseFloat(document.getElementById('weight').value);
     const result=document.getElementById('exe');
     let height_status=false,weight_status=false;
 
@@ -139,7 +139,7 @@ butt.addEventListener('click',()=>{
 
         if (bmi < 18.6) {
             result.innerHTML = `
-              <strong>Exercise Recommendations for Underweight (BMI &lt; 18.6):</strong><br><br>
+              <strong></strong><br><br>
               1️⃣ <strong>Focus on Strength:</strong> Prioritize strength-building exercises using resistance bands, body weight, or light weights to increase muscle mass.<br>
               2️⃣ <strong>Limit Excessive Cardio:</strong> Avoid too much cardiovascular activity that could lead to further calorie loss.<br>
               3️⃣ <strong>Moderate Cardio:</strong> Engage in light cardio like brisk walking or cycling to maintain heart health.<br>
@@ -148,7 +148,7 @@ butt.addEventListener('click',()=>{
             result.style.color = 'orange';
           } else if (bmi >= 18.6 && bmi < 24.9) {
             result.innerHTML = `
-              <strong>Exercise Recommendations for Normal Weight (BMI 18.6 - 24.9):</strong><br><br>
+              <strong></strong><br><br>
               1️⃣ <strong>Balanced Routine:</strong> Combine cardio, strength training, and flexibility work.<br>
               2️⃣ <strong>Cardio:</strong> Aim for at least 150 minutes of moderate-intensity cardio weekly — running, swimming, cycling, or dance workouts.<br>
               3️⃣ <strong>Strength Training:</strong> Train all major muscle groups 2–3 times a week with moderate to high intensity.<br>
@@ -166,7 +166,7 @@ butt.addEventListener('click',()=>{
             result.style.color = 'darkorange';
           } else {
             result.innerHTML = `
-              <strong>Exercise Recommendations for Obese (BMI ≥ 30):</strong><br><br>
+              <strong></strong><br><br>
               1️⃣ <strong>Start Gentle:</strong> Begin with low-impact cardio like walking, swimming, or cycling, gradually increasing duration.<br>
               2️⃣ <strong>Strength Training:</strong> Use resistance bands, bodyweight, or light weights to support muscle growth and metabolism.<br>
               3️⃣ <strong>Joint-Friendly:</strong> Choose exercises that reduce stress on joints while enhancing strength.<br>
