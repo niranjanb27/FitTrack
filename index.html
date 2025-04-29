@@ -10,24 +10,20 @@
 
   <style>
     body {
-      /* font-family: cursive; */
-      background-image: url('https://img.freepik.com/free-photo/top-view-calculator-notebook-frame_23-2149103980.jpghttps://img.freepik.com/free-photo/luxurious-car-parked-highway-with-illuminated-headlight-sunset_181624-60607.jpg');
-      background-size: 100%;
+      background-image: url('https://img.freepik.com/free-photo/luxurious-car-parked-highway-with-illuminated-headlight-sunset_181624-60607.jpg');
+      background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
       background-attachment: fixed;
       background-color: black;
-      
     }
 
     .wrapper {
       max-width: 500px;
-      margin: 5% auto;
-      margin-left: 1000px;
       background-color: rgba(168, 178, 186, 0.9);
       padding: 30px;
       border-radius: 15px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     }
 
     button {
@@ -58,47 +54,43 @@
       margin-top: 10px;
     }
 
-   @media (max-width: 600px ) {
+    @media (max-width: 600px) {
       .wrapper {
-        max-width: 70%;
-      }
-
-      .container {
-        flex-direction: column;
-        align-items: center;
+        max-width: 90%;
+        padding: 20px;
       }
     }
   </style>
 </head>
 
 <body>
-  <!-- Navbar -->
-  
   <!-- BMI Calculator Form -->
-  <div class="wrapper">
-    <h3 class="text-center mb-4">Calculate Your BMI</h3>
+  <div class="container d-flex justify-content-center align-items-center min-vh-100">
+    <div class="wrapper w-100">
+      <h3 class="text-center mb-4">Calculate Your BMI</h3>
 
-    <div class="mb-3">
-      <label for="height" class="form-label">Height (cm)</label>
-      <input type="text" class="form-control" id="height" />
-      <span id="height_error" class="text-danger small"></span>
-    </div>
+      <div class="mb-3">
+        <label for="height" class="form-label">Height (cm)</label>
+        <input type="text" class="form-control" id="height" />
+        <span id="height_error" class="text-danger small"></span>
+      </div>
 
-    <div class="mb-3">
-      <label for="weight" class="form-label">Weight (kg)</label>
-      <input type="text" class="form-control" id="weight" />
-      <span id="weight_error" class="text-danger small"></span>
-    </div>
+      <div class="mb-3">
+        <label for="weight" class="form-label">Weight (kg)</label>
+        <input type="text" class="form-control" id="weight" />
+        <span id="weight_error" class="text-danger small"></span>
+      </div>
 
-    <div class="d-grid gap-2">
-      <button id="bmi" class="btn btn-outline-secondary">Calculate BMI</button>
-      <p id="output" class="text-center text-dark"></p>
+      <div class="d-grid gap-2">
+        <button id="bmi" class="btn btn-outline-secondary">Calculate BMI</button>
+        <p id="output" class="text-center text-dark"></p>
 
-      <button id="diet" class="btn btn-outline-secondary">Your Diet Plan</button>
-      <p id="out" class="text-center text-dark"></p>
+        <button id="diet" class="btn btn-outline-secondary">Your Diet Plan</button>
+        <p id="out" class="text-center text-dark"></p>
 
-      <button id="exercise" class="btn btn-outline-secondary">Your Exercise Plan</button>
-      <p id="exe" class="text-center text-dark"></p>
+        <button id="exercise" class="btn btn-outline-secondary">Your Exercise Plan</button>
+        <p id="exe" class="text-center text-dark"></p>
+      </div>
     </div>
   </div>
 
