@@ -69,7 +69,7 @@ but.addEventListener('click',()=>{
 
         if (bmi < 18.6) {
             result.innerHTML = `
-              <strong></strong><br><br>
+              <strong></strong>
               1️⃣ <strong>Carbohydrates:</strong> Whole grains like oats, quinoa, brown rice, and whole wheat bread provide energy and fiber.<br>
               2️⃣ <strong>Proteins:</strong> Lean sources such as chicken breast, turkey, fish, tofu, beans, and lentils help build and repair tissues.<br>
               3️⃣ <strong>Fats:</strong> Healthy fats from avocados, nuts, seeds, and olive oil can boost calorie intake.<br>
@@ -78,7 +78,7 @@ but.addEventListener('click',()=>{
             result.style.color = 'orange';
           } else if (bmi >= 18.6 && bmi < 24.9) {
             result.innerHTML = `
-              <strong></strong><br><br>
+              <strong></strong>
               1️⃣ <strong>Carbohydrates:</strong> Whole grains, fruits, and vegetables for fiber and nutrients.<br>
               2️⃣ <strong>Proteins:</strong> Lean meats, poultry, fish, eggs, legumes, tofu, and dairy.<br>
               3️⃣ <strong>Fats:</strong> Avocados, nuts, seeds, and olive oil for heart-healthy fats.<br>
@@ -87,7 +87,7 @@ but.addEventListener('click',()=>{
             result.style.color = 'green';
           } else if (bmi >= 25 && bmi < 29.9) {
             result.innerHTML = `
-              <strong>Recommended Diet for Overweight (BMI 25 - 29.9):</strong><br><br>
+              <strong></strong>
               1️⃣ <strong>Carbohydrates:</strong> Limit refined carbs and emphasize whole grains and veggies.<br>
               2️⃣ <strong>Proteins:</strong> Lean sources like chicken, fish, and plant proteins to preserve muscle.<br>
               3️⃣ <strong>Fats:</strong> Healthy fats in moderation — watch portions.<br>
@@ -96,7 +96,7 @@ but.addEventListener('click',()=>{
             result.style.color = 'darkorange';
           } else {
             result.innerHTML = `
-              <strong></strong><br><br>
+              <strong></strong>
               1️⃣ <strong>Carbohydrates:</strong> Opt for complex carbs and high-fiber foods to manage appetite.<br>
               2️⃣ <strong>Proteins:</strong> Use lean and plant-based proteins to reduce saturated fat intake.<br>
               3️⃣ <strong>Fats:</strong> Minimize saturated/trans fats and prioritize unsaturated options.<br>
@@ -139,7 +139,7 @@ butt.addEventListener('click',()=>{
 
         if (bmi < 18.6) {
             result.innerHTML = `
-              <strong></strong><br><br>
+              <strong></strong>
               1️⃣ <strong>Focus on Strength:</strong> Prioritize strength-building exercises using resistance bands, body weight, or light weights to increase muscle mass.<br>
               2️⃣ <strong>Limit Excessive Cardio:</strong> Avoid too much cardiovascular activity that could lead to further calorie loss.<br>
               3️⃣ <strong>Moderate Cardio:</strong> Engage in light cardio like brisk walking or cycling to maintain heart health.<br>
@@ -148,7 +148,7 @@ butt.addEventListener('click',()=>{
             result.style.color = 'orange';
           } else if (bmi >= 18.6 && bmi < 24.9) {
             result.innerHTML = `
-              <strong></strong><br><br>
+              <strong></strong>
               1️⃣ <strong>Balanced Routine:</strong> Combine cardio, strength training, and flexibility work.<br>
               2️⃣ <strong>Cardio:</strong> Aim for at least 150 minutes of moderate-intensity cardio weekly — running, swimming, cycling, or dance workouts.<br>
               3️⃣ <strong>Strength Training:</strong> Train all major muscle groups 2–3 times a week with moderate to high intensity.<br>
@@ -157,7 +157,7 @@ butt.addEventListener('click',()=>{
             result.style.color = 'green';
           } else if (bmi >= 25 && bmi < 29.9) {
             result.innerHTML = `
-              <strong>Exercise Recommendations for Overweight (BMI 25 - 29.9):</strong><br><br>
+              <strong></strong>
               1️⃣ <strong>Cardio Focus:</strong> Incorporate moderate to high-intensity cardio like jogging, brisk walking, or elliptical training (150+ minutes/week).<br>
               2️⃣ <strong>Strength Training:</strong> Perform resistance exercises 2–3 times a week to boost metabolism and build lean muscle.<br>
               3️⃣ <strong>Circuit & Interval Training:</strong> Use HIIT or circuit workouts for efficient calorie burn.<br>
@@ -166,7 +166,7 @@ butt.addEventListener('click',()=>{
             result.style.color = 'darkorange';
           } else {
             result.innerHTML = `
-              <strong></strong><br><br>
+              <strong></strong>
               1️⃣ <strong>Start Gentle:</strong> Begin with low-impact cardio like walking, swimming, or cycling, gradually increasing duration.<br>
               2️⃣ <strong>Strength Training:</strong> Use resistance bands, bodyweight, or light weights to support muscle growth and metabolism.<br>
               3️⃣ <strong>Joint-Friendly:</strong> Choose exercises that reduce stress on joints while enhancing strength.<br>
@@ -183,8 +183,4 @@ butt.addEventListener('click',()=>{
     
 });
 
-function changeImage()
-{
-    var background_image=document.getElementById('bmi');
-    background_image.src='peter-conlan-LEgwEaBVGMo-unsplash.jpg';
-}
+
